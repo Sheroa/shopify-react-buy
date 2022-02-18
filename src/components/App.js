@@ -22,9 +22,9 @@ function App() {
           <Navbar />
           <Cart />
           <Routes>
-            <Route path="/" element={<HomePage />}>
+            <Route path="/shopify-react-buy" element={<HomePage />}>
             </Route>
-            <Route path="/product/:id" element={<ProductPage />}>
+            <Route path="/shopify-react-buy/product/:id" element={<ProductPage />}>
             </Route>
           </Routes>
         </Router>
