@@ -9,6 +9,11 @@ import ProductPage from '../pages/ProductPage';
 import Navbar from '../components/Navbar';
 import Cart from '../components/Cart';
 
+import ReactGA from 'react-ga4';
+
+ReactGA.initialize("G-Z8CYZLE3Y4");
+ReactGA.send("pageview");
+
 const debug =
   process.env.NODE_ENV === "production" ? void 0 : new DebugEngine();
 const engine = new Styletron();
