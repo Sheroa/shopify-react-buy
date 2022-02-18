@@ -2,6 +2,12 @@ import React, { useEffect, useContext } from 'react'
 import { useParams } from 'react-router-dom'
 import { ShopContext } from '../context/shopContext';
 import { Text, Div, Button, Row, Col, Container } from 'atomize'
+
+import ReactGA from 'react-ga4';
+
+ReactGA.initialize("G-Z8CYZLE3Y4");
+ReactGA.send({ hitType: "pageview", page: "/productPage" });
+
 const ProductPage = () => {
 
     let { id } = useParams();
