@@ -2,6 +2,12 @@ import React, { useContext, useEffect } from 'react'
 import { ShopContext } from '../context/shopContext'
 import { Container, Text, Div, Row, Col } from 'atomize'
 import { Link } from 'react-router-dom'
+import ReactGA from 'react-ga'
+
+// Global site tag (gtag.js) - Google Analytics
+ReactGA.initialize('G-L87M8HXQ58')
+ReactGA.pageview(window.location.pathname + window.location.search);
+
 const HomePage = () => {
 
   const { fetchAllProducts, products } = useContext(ShopContext)
